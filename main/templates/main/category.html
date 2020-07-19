@@ -1,0 +1,22 @@
+{% extends "main/header.html" %}
+
+
+
+{% block content %}
+
+<div class="row">
+	{% for m, msafiris in msafiris.items %}
+
+	    <div class="col s12 m6">
+	    <a href="{{msafiris}}", style="color:#000">
+	      <div class="card hoverable">
+	        <div class="card-content">
+	        <div class="card-title">{{m.msafiri_category}}</div>
+	      	<p>{{m.details_summary}}</p>
+	      	</div>
+	      	</a>
+	    </div>
+	    {% endfor %}
+  </div>
+
+{% endblock %}
